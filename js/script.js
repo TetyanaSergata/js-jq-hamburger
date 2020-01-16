@@ -1,22 +1,11 @@
 // Creare un hamburger menu con l’utilizzo di
 // Html, Css e JavaScript.
-var menuRight = $('.header-right');
-var menuHamburger = $('.fas fa-times');
 
-menuRight.click(
+var menuHamburger = $('hamburger-menu');
+
+menuHamburger.click(
   function(){
-    $('.header-right').hide();
+    $('hamburger-menu').show('fast');
   }
 );
-
-menuRight.dblclick(
-  function(){
-    $('.header-right').show();
-  }
-);
-
-// menuHamburger.dblclick(
-//   function(){
-//     $('.close').show();
-//   }
-// );
+console.log(menuHamburger);
